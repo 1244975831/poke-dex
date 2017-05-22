@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PokeDex</string>
+    <string name="itemlist_title">列表标题</string>
+
+    <string name="solved_label">solved</string>
+    <string name="details_label">详情</string>
+    <string name="title_hint">标题</string>
+    <string name="title_label">标题</string>
+    <string name="title_activity_item_detail">ItemDetailActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="date_picker_title">Item创建时间</string>
+
+
+    <string name="search">请输入搜索</string>
+    <string name="qrss">搜索 </string>
+    <string name="pkname">宠物名称 </string>
+
+    <string name="content1">Fragment 1</string>
+    <string name="content2">Fragment 2</string>
+    <string name="content3">Fragment 3</string>
+
+    <string name="jiben">基本信息</string>
+    <string name="jinhua">进化路线</string>
+    <string name="zhaoshi">第七世代-月亮</string>
+    <string name="tujian">图鉴说明</string>
+    <string name="leixing">类型相性</string>
+
+    <string name="tex">特性</string>
+    <string name="shengd">生蛋组</string>
+    <string name="fuh">孵化周期</string>
+    <string name="zhongz">种族值</string>
+    <string name="nul">努力值</string>
+    <drawable name="off">#23238e</drawable>
+    <drawable name="on">#66b3ff</drawable>
+</resources>

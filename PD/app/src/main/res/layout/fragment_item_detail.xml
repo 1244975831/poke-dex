@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/data_main"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    </include>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal">
+        <include
+            android:id="@+id/bottombar"
+            layout="@layout/bottombar"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            />
+
+        <FrameLayout
+            android:id="@+id/content_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/frament_content1"
+            android:background="#fff"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="22dp"
+        android:onClick="menu"
+        android:background="@drawable/menu"/>
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="25dp"
+        android:text="NO.001"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+</RelativeLayout>
+
