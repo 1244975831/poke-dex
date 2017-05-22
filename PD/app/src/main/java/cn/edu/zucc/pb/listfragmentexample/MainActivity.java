@@ -30,7 +30,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         String value=null;
         dbManager = new DBManager(getBaseContext());
+        if(dbManager.getflag()==0){
             dbManager.initData();
+            dbManager.addflag();
+        }
 //        dbManager.ReadData();
         Intent intent = getIntent();
         value = intent.getStringExtra("value");

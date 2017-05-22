@@ -196,6 +196,31 @@ public class DBManager {
         datas6.size();
         return datas6;
     }
+
+    public void addflag(){
+        ContentValues values=new ContentValues();
+        try {
+            values.put("flag",1);
+            db.insert("Load",null,values);
+            values.clear();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public int getflag(){
+        int result=0;
+        SQLiteDatabase dp=helper.getWritableDatabase();
+        Cursor cursor = dp.query("Pokemon",null,null,null,null,null,null);
+        if(cursor.moveToFirst()){
+            do{
+                result=1;
+            }while (cursor.moveToNext());
+        }
+        cursor.close();
+        return result;
+    }
+
     public  List<ItemDetail> selectitems(String value){
         ArrayList<ItemDetail> datas2 = new ArrayList<>();
         ArrayList<ItemDetail> datas3 = new ArrayList<>();

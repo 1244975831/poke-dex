@@ -36,6 +36,8 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE IF NOT EXISTS Profile" +
                 "(_id INTEGER PRIMARY KEY AUTOINCREMENT, prid TEXT, profile TEXT,link TEXT  )");
 
+        db.execSQL("CREATE TABLE IF NOT EXISTS Load" +
+                "(flag int  )");
 
         //创建图片表
 //        db.execSQL("CREATE TABLE IF NOT EXISTS friend_images" +
